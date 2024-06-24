@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #F6BF8D;
+    color: #9D693A;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  header nav li {
+    margin-right: 20px;
+  }
+  
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  header h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  #produtos-destaque {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .produto {
+    margin: 15px;
+    width: 250px;
+    border: 5px solid #ddd;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .produto img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .produto h3 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .produto p {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+  
+  .produto button {
+    background-color: #F4BF8C;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px; /* ajustei o tamanho da fonte para 16px */
+  }
+  
+  /* Carousel Styles */
+  
+  #carouselExampleIndicators {
+    max-width: 800px;
+    margin: 10px auto;
+  }
+  
+  .carousel-indicators {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #ac7649;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .carousel-indicators li.active {
+    background-color: #337ab7;
+  }
+  
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-item {
+    position: relative;
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel-item.active {
+    display: block;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 40px;
+    margin: auto;
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .carousel-control-prev {
+    left: 0;
+  }
+  
+  .carousel-control-next {
+    right: 0;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
